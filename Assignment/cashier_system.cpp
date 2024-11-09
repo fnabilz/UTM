@@ -63,7 +63,7 @@ int main() {
 
     for (i = 0; i < totalProduct; i++) {
         cout << fixed << setprecision(2);
-        cout << "\n " << product[i] << "\t| $" << unitPrice[i] << "\t\t| " << productQuantity[i] << "\t\t| $" << totalPrice[i];
+        cout << "\n" << product[i] << "\t| $" << unitPrice[i] << "\t\t| " << productQuantity[i] << "\t\t| $" << totalPrice[i];
         grandTotal += totalPrice[i];
     }
     cout << "\n----------------------------------------------------------------------";
