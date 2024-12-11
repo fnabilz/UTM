@@ -35,7 +35,7 @@ int main() {
     displayMedalTable(medals);
 
 
-    // prompt for country number, must be from 1-4, use while loop for error checking
+    // prompt for country number, must be from 1-4
     for (i = 0; i < maxCountry; i++) {
 
         
