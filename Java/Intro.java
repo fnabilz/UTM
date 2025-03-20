@@ -31,6 +31,8 @@ class Person {
 
 class Prog001 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         Person p1 = new Person("ABU BAKAR",2004,66,1.67f);
         p1.calculate();
         p1.displayInfo();
@@ -38,5 +40,25 @@ class Prog001 {
         Person p2 = new Person("SARAH",2000,55,1.55f);
         p2.calculate();
         p2.displayInfo();
+
+        System.out.println("Enter name, year, weight, height...");
+        String name = sc.nextLine();
+        int yob = sc.nextInt();
+        int weight = sc.nextInt();
+        float height = sc.nextFloat();    
+
+        Person p3 = new Person(name, yob, weight, height);
+        p3.calculate();
+        p3.displayInfo();
+
+        Person p4 = new Person("ADAM",1995,70,1.75f);
+        p4.calculate();
+        p4.displayInfo();
+
+        Person p5 = new Person("MUHAMMAD",1985,65,1.72f);
+        p5.calculate();
+        p5.displayInfo();
+
+        sc.close();
     }
 }
