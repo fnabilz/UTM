@@ -1,33 +1,42 @@
 import java.util.Scanner;
 
-class Prog001 {
-    
-    public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-        
-            System.out.println("Please enter your name...");
-            String name = sc.nextLine(); // read the input
-            System.out.println("Please enter year born...");
-            int yob = sc.nextInt(); // read the input
-            
-            // read weight(kg) & height(meter)
-            System.out.println("Please enter your weight (kg)...");
-            float weight = sc.nextFloat();
-            System.out.println("Please enter your height (m)...");
-            float height = sc.nextFloat();
-            
-            
-            // process calc age
-            int age = 2025 - yob;
-            float bmi = weight / (height * height);
-            
-            System.out.println("Hello, nice meeting you: " +name);
-            System.out.println("Age is: " +age +" years old");
-            System.out.println("Weight: " +weight +" kg");
-            System.out.println("Height: " +height +"m");
-            System.out.println("BMI: " +bmi);
+class Person {
+    // properties
+    String name;
+    int yob, age, weight;
+    float height, bmi;
 
-            sc.close();
+    //constructor
+    public Person(String name, int yob, int weight, float height){
+        this.name = name;
+        this.yob = yob;
+        this.weight = weight;
+        this.height = height;
+    }    
+
+    // methods
+    public void calculate() {
+        age = 2025 - yob;
+        bmi = weight / (height * height);
     }
-    
+
+    public void displayInfo() {
+        System.out.println("Hello, nice meeting you: " +name);
+        System.out.println("Age is: " +age +" years old");
+        System.out.println("Weight: " +weight +" kg");
+        System.out.println("Height: " +height +"m");
+        System.out.println("BMI: " +bmi);
+    }
+}
+
+class Prog001 {
+    public static void main(String[] args) {
+        Person p1 = new Person("ABU BAKAR",2004,66,1.67f);
+        p1.calculate();
+        p1.displayInfo();
+
+        Person p2 = new Person("SARAH",2000,55,1.55f);
+        p2.calculate();
+        p2.displayInfo();
+    }
 }
