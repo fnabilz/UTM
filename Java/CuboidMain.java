@@ -20,9 +20,9 @@ public class CuboidMain {
         int volume = length * width * height;
 
         // output
-        System.out.println("\nPerimeter: " + perimeter + " m");
-        System.out.println("Area: " + area + " m");
-        System.out.println("Volume: " + volume + " m");
+        System.out.println("\nTotal Perimeter: " + perimeter + " m");
+        System.out.println("Total Area: " + area + " m");
+        System.out.println("Volume: " + volume + " m\n");
 
         sc.close();
     }
