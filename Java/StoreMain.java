@@ -1,3 +1,5 @@
+
+
 class ArrayHandler {
 
     // methods
@@ -8,7 +10,7 @@ class ArrayHandler {
             if (array[i]%2 != 0) {
                 ++odd;
             }
-         }
+        }
 
         return odd;
     }
@@ -20,7 +22,7 @@ class ArrayHandler {
             if (array[i]%2 == 0) {
                 ++even;
             }
-         }
+        }
 
         return even;
     }
@@ -61,7 +63,7 @@ class ArrayHandler {
 
     public int calcAverage(int[] array) {
         int total = calcTotal(array);
-        int average = total /  array.length;
+        int average = total / array.length;
 
         return average;
     }
