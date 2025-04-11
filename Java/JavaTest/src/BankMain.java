@@ -25,6 +25,8 @@ class BankAccount {
     // private String branchCode;
     private double dividendRate;
 
+    accountNumber = 0;
+
    public BankAccount () {}
    
     // constructor 2

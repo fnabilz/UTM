@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Java\\JavaTest\\src",
+        "Java\\StudentHelperApp\\src"
+    ],
+    "java.project.explorer.showNonJavaResources": true,
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.project.referencedLibraries": []
+}
