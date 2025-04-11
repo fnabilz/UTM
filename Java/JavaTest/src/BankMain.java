@@ -18,16 +18,14 @@ public class BankMain {
 
 class BankAccount {
     // properties
-    private String accountHolderName;
-    private double balance;
-    private int accountNumber;
+    String accountHolderName;
+    double balance;
+    int accountNumber;
     // private String accountType;
     // private String branchCode;
-    private double dividendRate;
+    double dividendRate;
 
-    accountNumber = 0;
-
-   public BankAccount () {}
+    public BankAccount () {}
    
     // constructor 2
     public BankAccount (String ahn, double initDepo) {
@@ -48,6 +46,7 @@ class BankAccount {
         System.out.println("ACCOUNT INFO:");
         System.out.println("Acc Hol Name : " + accountHolderName);
         System.out.println("Current Balance : " + balance + "\n");
+       // System.out.println("Acc Num: " + accountNumber);
         
     }
 
