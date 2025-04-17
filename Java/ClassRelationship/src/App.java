@@ -21,6 +21,7 @@ class Owner {
         System.out.println("Owner name: " + name);
         System.out.println("House owned: " + house.address);
     }
+
 }
 
 class House {
@@ -60,6 +61,11 @@ class Room {
 
     public Room(String type) {
         this.roomType = type;
+    }
+
+    @Override
+    public String toString() {
+        return roomType;
     }
 }
 
