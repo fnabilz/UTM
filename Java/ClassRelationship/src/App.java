@@ -1,3 +1,8 @@
+/*
+    Name: Ahmad Fikri Nabil bin Zamri
+    MatricID: A24CS0035
+ */
+
 import java.util.ArrayList;
 
 class Owner {
