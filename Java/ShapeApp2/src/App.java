@@ -1,3 +1,8 @@
+/*
+ * Name: Ahmad Fikri Nabil bin Zamri
+ * Matric ID: A24CS0035
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
