@@ -7,6 +7,7 @@ public class PatientSystem {
             Define an ArrayList to dynamically store objects of Patient
         */
         ArrayList<Patient> patientList = new ArrayList<>();
+        
         /*
             Initialize the Patient and Address objects based on the information given in the Table
             Then, add the Patient objects into the ArrayList 
@@ -28,21 +29,16 @@ public class PatientSystem {
          /*
             Invoke the displayRecord function to display the list of patients
         */
-
         displayRecord(patientList);
-
-
-
+        
         /*
             Remove the 2nd patient in the list
         */
-
         patientList.remove(1);
 
          /*
             Invoke the displayRecord function again to display the list of patients
         */
-
         displayRecord(patientList);
 
         System.out.println("");
