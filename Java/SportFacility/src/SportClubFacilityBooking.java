@@ -54,7 +54,7 @@ class ClubMember extends Person {
     }
     
     public void displayBookings() {
-        if (bookings.size() == 0) {
+        if (bookings.isEmpty()) {
             System.out.println("No booking made by " + super.getName());
         }
         else {
@@ -82,7 +82,7 @@ class ClubStaff extends Person {
     }
 
     public void displayBookings() {
-        if (bookings.size() == 0) {
+        if (bookings.isEmpty()) {
             System.out.println("No booking made by " + super.getName());
         }
         else {
