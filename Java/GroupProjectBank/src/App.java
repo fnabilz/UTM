@@ -5,24 +5,29 @@ public class App {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        //FinanceOfficer officer = new FinanceOfficer(scan);
         ArrayList<User> userList = new ArrayList<>();
         User currentUser = null;
+        SystemAdmin currentAdmin = new SystemAdmin("admin123", "raid", "12345");
 
-        User user1 = new User("fnz", "Fikri", "Zamri", "fikri@gmail.com", "12345678", "AccountHolder");
+        User user1 = new AccountHolder("ahmd", "Ahmad Ibrahim", "ahmad@gmail.com", "12345678", "AccountHolder");
 
         userList.add(user1);
 
-        System.out.println("-------[Bank System]-------");
-        System.out.println("Hello! Please login to continue... ");
-        while (currentUser == null) {
-            System.out.println("\nID/Email: ");
-            String input = scan.nextLine();
-            System.out.println("Password :");
-            String password = scan.nextLine();
-            currentUser = User.login(userList, input, password);
+        int option = Interface.Initiate(scan);
+
+        if (option == 1) {
+            currentUser = Interface.userLogin(userList, scan);
+            if (currentUser != null) {
+                Interface.greetings(currentUser);
+            }
+        }
+        else {
+            if (Interface.adminLogin(currentAdmin, scan)) {
+                Interface.greetings(currentAdmin);
+            }
         }
 
-        System.out.println("\nHello " + currentUser.getName() + ",");
         System.out.println("-------[Menu]-------");
 
         scan.close();

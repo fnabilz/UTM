@@ -4,17 +4,15 @@ public class User {
 
     // properties
     private String id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
     private String password;
     private String type;
 
     // constructor
-    public User(String id, String firstName, String lastName, String email, String password, String type) {
+    public User(String id, String name, String email, String password, String type) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
         this.email = email;
         this.password = password;
         this.type = type;
@@ -57,7 +55,7 @@ public class User {
     }
 
     public String getName() {
-        return this.firstName + " " + this.lastName;
+        return this.name;
     }
 
     private String getType() {
