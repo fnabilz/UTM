@@ -1,0 +1,3 @@
+Hello, this is a text file example!
+My name is Ahmad Fikri Nabil bin Zamri.
+Welcome to SCSE2103!
