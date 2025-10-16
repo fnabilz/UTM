@@ -1,3 +1,4 @@
 Hello, this is a text file example!
-My name is Ahmad Fikri Nabil bin Zamri.
-Welcome to SCSE2103!
+My name is Fazliaty Edora Fadzli.
+Welcome to SECJ 2013!
+I love coding.
