@@ -2,3 +2,4 @@ Hello, this is a text file example!
 My name is Fazliaty Edora Fadzli.
 Welcome to SECJ 2013!
 I love coding.
+I love coding.

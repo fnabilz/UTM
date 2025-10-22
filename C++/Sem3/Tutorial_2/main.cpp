@@ -90,9 +90,9 @@ void closeFile(std::fstream &file) {
 
 int main() {
     std::fstream textFile, binaryFile, randomAccessFile;
-    std::string textFilename = "C:\\Users\\User\\Documents\\Coding\\UTM\\C++\\Sem3\\Tutorial_2\\textfile.txt";
-    std::string binaryFilename = "C:\\Users\\User\\Documents\\Coding\\UTM\\C++\\Sem3\\Tutorial_2\\binaryfile.bin";
-    std::string randomAccessFilename = "C:\\Users\\User\\Documents\\Coding\\UTM\\C++\\Sem3\\Tutorial_2\\randomaccessfile.bin";
+    std::string textFilename = "textfile.txt";
+    std::string binaryFilename = "binaryfile.bin";
+    std::string randomAccessFilename = "randomaccessfile.bin";
 
     // Open and write to a text file
     if (openFile(textFile, textFilename, std::ios::out | std::ios::app)) {
