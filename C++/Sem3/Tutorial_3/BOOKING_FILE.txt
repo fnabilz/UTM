@@ -1,0 +1,4 @@
+001    31/12/2025    Superman    14    J    20    Paid
+002    4/8/2025    Wall-E    23    C    20    Paid
+003    8/10/2025    Madagascar    4    P    20    Paid
+004    21/12/2025    Transformer    7    A    20    Paid
