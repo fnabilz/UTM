@@ -55,17 +55,26 @@ public:
     int DeleteNode(int data) {
         int currentIndex = 0;
         Node* currentNode = front;
-        Node* prevNode = nullptr;
         while (currentNode && currentNode->data != data) {
-            prevNode = currentNode;
             currentNode = currentNode->next;
             currentIndex++;
         }
 
         if (currentNode) {
-            Node* nextNode = currentNode->next;
-            prevNode->next = nextNode;
-            nextNode->prev = prevNode;
+            if (currentIndex == 0) {
+                Node* nextNode = currentNode->next;
+                front = nextNode;
+                if (nextNode) {
+                    nextNode->prev = nullptr;
+                }
+            } else {
+                Node* nextNode = currentNode->next;
+                Node* prevNode = currentNode->prev;
+                prevNode->next = nextNode;
+                if (nextNode) {
+                    nextNode->prev = prevNode;
+                }
+            }
             delete(currentNode);
             return currentIndex;
         }
